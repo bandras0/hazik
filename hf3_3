@@ -1,0 +1,14 @@
+print("Egy női focsi csapat játékosokat keres ")
+nem = ""
+while nem != "f" and nem != "m":
+    nem = input("Kérem adja meg a nemét(f,m)")
+    if nem != "f" and nem != "m":
+        print("Az egyikett ki kell választania ")
+if nem=="m":
+ print("Nem játszhat ebben a csapatban")
+if nem=="f":
+ kor = int(input("Kérem adja meg az életkorát"))
+ if kor>=10 and kor <= 12:
+  print("Őn játszhat ebben a focicsapadtban ")
+ else:
+     print("Őn nem játszhat ebben a csapatban")
