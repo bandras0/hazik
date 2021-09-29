@@ -1,0 +1,59 @@
+seconds=int(input("Kérem adjon meg egy számot"))
+years=seconds//(52*604800)
+seconds=seconds%(52*604800)
+
+days= seconds//(24*3600)
+seconds=seconds%(24*3600)
+
+hours=seconds//3600
+seconds=seconds%3600
+
+minutes=seconds//60
+seconds%=60
+if years==1:
+    print(f'{years} year ',end='')
+    print(end=",")
+
+elif years == 0:
+    print(" ")
+else:
+    print(f"{years} years  ",end='')
+    print(end=",")
+
+if days==1:
+    print(f"{days} day ",end='')
+    print(end=",")
+
+elif days == 0:
+    print(" ")
+else:
+    print(f'{days} days ',end='')
+    print(end=",")
+
+if hours==1:
+    print(f"{hours} hour ",end='')
+    print(end=",")
+
+
+elif hours == 0:
+    print(" ")
+else:
+    print(f"{hours} hours ",end='')
+    print(end=",")
+
+if minutes==1:
+    print(f"{minutes} minute ",end='')
+    print(end="and")
+elif minutes== 0:
+    print(" ")
+else:
+    print(f"{minutes} minutes ",end="")
+    print(end="and ")
+if seconds==1:
+    print( f" {seconds} second ",end='')
+elif seconds == 0:
+    print(" ")
+else:
+    print(f"{seconds} seconds ")
+if (years==0 and days==0 and hours==0 and minutes==0 and seconds==0):
+    print("now")
