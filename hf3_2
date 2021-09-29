@@ -1,0 +1,7 @@
+termekar=int(input("A kivánt termék ára:"))
+if termekar<= 10000:
+ akciosar=termekar-termekar*0.10
+ print("Az akcióval együtt a termék ára:",akciosar)
+else:
+  akciosar=termekar-termekar*0.20
+  print("Az akcióval együtt a termék ára:", akciosar)
