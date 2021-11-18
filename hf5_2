@@ -1,0 +1,14 @@
+f=open("text2","w")
+szoroztabla=[]
+for i in range(1,11):
+    for y in range(1,11):
+        szoroztabla.append(i*y)
+i=0
+while i<len(szoroztabla):
+    f.write(str(szoroztabla[i])+"\t")
+    i+=1
+    if i%10==0:
+        f.write("\n")
+        if i==len(szoroztabla):
+            break
+f.close()
