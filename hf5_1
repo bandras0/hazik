@@ -1,0 +1,5 @@
+fileobject=open("text1","r")
+a=len(fileobject.readlines())
+b=fileobject.read()
+print(f"\n ennyi karakter van a fileban {b}  és ennyi sor van a fileban {a} ")
+fileobject.close()
