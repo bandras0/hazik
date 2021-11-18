@@ -1,0 +1,14 @@
+j=1
+elem1=float(input("mertani sorozat elso eleme: "))
+elem2=float(input("mertani sorozat masodik eleme: "))
+q=int(elem2/elem1)
+print(q)
+a1=1
+n=int(input("kerem adja meg a sorozat hanyadik elemet szeretne kiszamolni: "))
+n1=int(n-1)
+
+for j in range(1,n1):
+    an=a1*pow(elem1,n1)
+print(f" A mértani sorozat n-edik eleme: {an}")
+
+from math import factorial
