@@ -1,0 +1,19 @@
+szam=int(input("Kérem adjon meg egy számot:"))
+def binary(n):
+    s=bin(n)
+    s1=int(s[2:])
+    return s1
+
+def hexadecimal(n):
+    s=hex(n)
+    s1=str(s[2:])
+    return s1
+
+def octal(n):
+    s=oct(n)
+    s1=str(s[2:])
+    return s1
+binaris=binary(szam)
+hexadecimalis=hexadecimal(szam)
+octalis=octal(szam)
+print(f"bináis:{binaris} hexadecimális:{hexadecimalis}   oktális:{octalis}")
