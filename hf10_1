@@ -1,0 +1,13 @@
+felhasznalo = {}
+for i in range(5):
+    nev = input("Kérem adjon meg egy nevet:\t")
+    telefonszam = input("A névhez tartozó telefonszámot adja meg itt :\t")
+    valasz = input("Szeretne még telefonszámokat megadni?(igen/nem)\n")
+    if valasz == "igen":
+        masodlagosszam = input("Kérem adjon meg egy másodlagós elérhetöséget:\t")
+        felhasznalo[nev] = telefonszam,masodlagosszam
+    else:
+        felhasznalo[nev] = telefonszam
+print("A listában lévő emberek nevei :\n",list(felhasznalo))
+nev = input("Kérem válasszon egy nevet a listában szereplök közül :\t")
+print(felhasznalo.get(nev))
